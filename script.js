@@ -25,7 +25,7 @@ function Show(){
     document.getElementById("tbody").innerHTML=""
     for(var i = 0; i < data.length; i = i + 1){
         var obj = data[i]
-        // console.log(obj.Name,obj.Phone,obj.City);
+        
         var row = document.createElement("tr")
         var cell = document.createElement("td")
         var cell1 = document.createElement("td")
@@ -76,7 +76,7 @@ function Edit(button){
     key = id
     var array = JSON.parse(localStorage.getItem("data"))
     var obj = array[id]
-    // console.log(obj.Name,obj.Phone,obj.City);
+    
     document.getElementById("Name").value = obj.Name
     document.getElementById("Phone").value = obj.Phone
     document.getElementById("City").value = obj.City
